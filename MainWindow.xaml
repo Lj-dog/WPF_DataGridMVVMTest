@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        xmlns:vm ="clr-namespace:WpfApp.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:Mainviewmodel></vm:Mainviewmodel>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" ItemsSource="{Binding Mainmodels}" SelectedItem="{Binding Selectmodel}"/>
+        <Grid Grid.Row="1">
+            <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock Text="Studentname:" Margin="5,0"/>
+                <TextBox Width="100" Text="{Binding Model.Studentname}"/> <!--Model.Studentname-->
+                <TextBlock Text="ID:" Margin="5,0"/>
+                <TextBox Width="100" Text="{Binding Model.Studentid}"/>
+                <Button Width="100" Content="Add" Margin="5,0" Command="{Binding BtnAddCommand}"/>
+                <Button Width="100" Content="Del" Margin="5,0" Command="{Binding BtnRemoveCommand}"/>
+
+
+            </StackPanel>
+            
+            
+        </Grid>
+    </Grid>
+</Window>
