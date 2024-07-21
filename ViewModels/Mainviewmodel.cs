@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO.Pipes;
 using System.Linq;
@@ -20,12 +21,16 @@ namespace WpfApp.ViewModels
         public Mainviewmodel()
         {
             Mainmodels = new();
-            Mainmodels.CollectionChanged += MainmodelsChanged;
+            //Mainmodels.CollectionChanged += MainmodelsChanged;
+            Mainmodels.ListChanged += MainmodelsChanged;
             Model = new();
         }
 
+        //[ObservableProperty]
+        //private ObservableCollection<Mainmodel>? _mainmodels;
+
         [ObservableProperty]
-        private ObservableCollection<Mainmodel>? _mainmodels;
+        private BindingList<Mainmodel>? _mainmodels;
 
         [ObservableProperty]
         private Mainmodel _model;
@@ -58,7 +63,7 @@ namespace WpfApp.ViewModels
         //    MessageBox.Show("Changeded");
         //}
 
-        private void MainmodelsChanged(object? sender, NotifyCollectionChangedEventArgs e)
+        private void MainmodelsChanged(object? sender, ListChangedEventArgs e)
         {
             MessageBox.Show("Changeded");
         }
