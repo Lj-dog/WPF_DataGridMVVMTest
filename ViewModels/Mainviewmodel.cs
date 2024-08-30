@@ -22,15 +22,17 @@ namespace WpfApp.ViewModels
         {
             Mainmodels = new();
             //Mainmodels.CollectionChanged += MainmodelsChanged;
-            Mainmodels.ListChanged += MainmodelsChanged;
+            //Mainmodels.ListChanged += MainmodelsChanged;
             Model = new();
         }
 
         //[ObservableProperty]
         //private ObservableCollection<Mainmodel>? _mainmodels;
 
-        [ObservableProperty]
-        private BindingList<Mainmodel>? _mainmodels;
+        public ObservableCollection<Mainmodel>? Mainmodels { get;  set; }
+
+        //[ObservableProperty]
+        //private BindingList<Mainmodel>? _mainmodels;
 
         [ObservableProperty]
         private Mainmodel _model;
@@ -38,8 +40,8 @@ namespace WpfApp.ViewModels
         [ObservableProperty]
         private Mainmodel? _selectmodel;
 
-        [ObservableProperty]
-        private int _number;
+        //[ObservableProperty]
+        //private int _number;
 
         [RelayCommand]
         private void BtnAdd()

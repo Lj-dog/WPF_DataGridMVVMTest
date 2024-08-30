@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 
 namespace WpfApp.Models
 {
-    partial class Mainmodel : ObservableObject
+    partial class Mainmodel //: ObservableObject
     {
-        [ObservableProperty]
+       // [ObservableProperty]
         private string? _studentname;
 
-        [ObservableProperty]
+        public string? Studentname { get; set; }
+
+       // [ObservableProperty]
         private string? _studentid;
+
+        public string? Studentid { get; set; }
     }
 }
