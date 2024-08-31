@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.34916.146
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp", "WpfApp.csproj", "{410D8064-A024-43EA-B90D-62546E609D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppDataGridMvvmTest", "WpfAppDataGridMvvmTest.csproj", "{580BC86E-29B4-41AE-AEB1-377CAD960F60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{410D8064-A024-43EA-B90D-62546E609D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{410D8064-A024-43EA-B90D-62546E609D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{410D8064-A024-43EA-B90D-62546E609D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{410D8064-A024-43EA-B90D-62546E609D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580BC86E-29B4-41AE-AEB1-377CAD960F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580BC86E-29B4-41AE-AEB1-377CAD960F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580BC86E-29B4-41AE-AEB1-377CAD960F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580BC86E-29B4-41AE-AEB1-377CAD960F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {55BA41AB-1E7D-4AB2-9E56-115406DDD7D7}
+		SolutionGuid = {C9891619-CA8A-4FCC-8FAF-7B8DBD058DC5}
 	EndGlobalSection
 EndGlobal
